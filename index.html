@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бизнес сайт для вашей компании">
+    <title>Бизнес Сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header class="fade-in">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Главная</a></li>
+                <li><a href="about.html" target="_blank">О нас</a></li>
+                <li><a href="services.html" target="_blank">Услуги</a></li>
+                <li><a href="contact.html" target="_blank">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero slide-in">
+        <div class="hero-content">
+            <h1>Добро пожаловать в нашу компанию</h1>
+            <p>Мы предлагаем лучшие бизнес-услуги</p>
+            <button onclick="window.location.href='contact.html'">Связаться с нами</button>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="fade-in">
+        <h2>О нашей компании</h2>
+        <p>Наша компания предоставляет высококачественные услуги в области бизнеса...</p>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="fade-in">
+        <h2>Наши услуги</h2>
+        <div class="services-list">
+            <div class="service-item slide-in">
+                <h3>Консалтинг</h3>
+                <p>Консультации по вопросам бизнеса и стратегии.</p>
+            </div>
+            <div class="service-item slide-in">
+                <h3>Маркетинг</h3>
+                <p>Стратегии цифрового маркетинга и рекламы.</p>
+            </div>
+            <div class="service-item slide-in">
+                <h3>Разработка</h3>
+                <p>Разработка и внедрение бизнес-решений.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="fade-in">
+        <h2>Контакты</h2>
+        <form id="contact-form">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer class="fade-in">
+        <p>&copy; 2024 Ваша компания</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
